@@ -82,8 +82,8 @@
                 aportePension = ibc * PORCENTAJE_APORTE_PENSION;
                 resultDiv.innerHTML = `
                     Ingreso: $${salario.toLocaleString()}<br>
-                    IBC (40% si es mayor este es 1 SMMLV): $${ibc.toLocaleString()}<br>
-                    Aporte Pensión (16% IBC o sobre 1SMMLV): $${aportePension.toLocaleString()}
+                    IBC (40% si > 1 SMMLV): $${ibc.toLocaleString()}<br>
+                    Aporte Pensión (16% del IBC): $${aportePension.toLocaleString()}
                 `;
             }
         }
