@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Pensional</title>
+    <title>Simulador Aportes Pensionales</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="calculator">
-        <h2>Simulador Pensional</h2>
+        <h2>Simulador Aportes Pensionales</h2>
 
         <!-- Selección de tipo de aportante -->
         <div class="form-group">
@@ -66,7 +66,7 @@
 
             // Lógica para cada tipo de aportante
             if (tipoAportante === "contratista") {
-                resultDiv.innerHTML = `Cálculo no disponible para contratistas.`;
+                resultDiv.innerHTML = `Por el momento no está disponible esta opción, debido a que actualmente está en curso la reforma laboral la cual determinará los nuevos procedimientos, apenas sea sancionada la reforma habilitaremos esta opción.`;
             } else if (tipoAportante === "empleado") {
                 ibc = salario;
                 const aporteEmpleador = ibc * 0.12;
