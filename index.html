@@ -74,16 +74,16 @@
                 resultDiv.innerHTML = `
                     Ingreso: $${salario.toLocaleString()}<br>
                     IBC: $${ibc.toLocaleString()}<br>
-                    Empleador: $${aporteEmpleador.toLocaleString()}<br>
-                    Empleado: $${aporteEmpleado.toLocaleString()}
+                    Empleador (12% IBC): $${aporteEmpleador.toLocaleString()}<br>
+                    Empleado (4% IBC): $${aporteEmpleado.toLocaleString()}
                 `;
             } else if (tipoAportante === "independiente") {
                 ibc = smmlvSeleccionado <= 2.5 ? SMMLV_2024 : salario * PORCENTAJE_IBC_INDEPENDIENTES;
                 aportePension = ibc * PORCENTAJE_APORTE_PENSION;
                 resultDiv.innerHTML = `
                     Ingreso: $${salario.toLocaleString()}<br>
-                    IBC: $${ibc.toLocaleString()}<br>
-                    Aporte Pensión: $${aportePension.toLocaleString()}
+                    IBC (40% si es mayor este es 1 SMMLV): $${ibc.toLocaleString()}<br>
+                    Aporte Pensión (16% IBC o sobre 1SMMLV): $${aportePension.toLocaleString()}
                 `;
             }
         }
