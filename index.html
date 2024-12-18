@@ -65,9 +65,9 @@
             let ibc, aportePension;
 
             // Lógica para cada tipo de aportante
-            if (tipoAportante === "Independiente (Contratista por Prestación de Servicios)") {
+            if (tipoAportante === "contratista") {
                 resultDiv.innerHTML = `Cálculo no disponible para contratistas.`;
-            } else if (tipoAportante === " Empleado (Con contrato laboral)") {
+            } else if (tipoAportante === "empleado") {
                 ibc = salario;
                 const aporteEmpleador = ibc * 0.12;
                 const aporteEmpleado = ibc * 0.04;
