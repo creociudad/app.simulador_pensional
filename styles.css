@@ -1,14 +1,13 @@
-/* Diseño compacto para incrustaciones */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: transparent; /* Fondo transparente */
+    background-color: transparent;
     color: #333;
 }
 
 .calculator {
-    max-width: 320px; /* Tamaño reducido */
+    max-width: 320px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -77,7 +76,7 @@ button:hover {
     text-align: center;
 }
 
-/* Diseño responsive */
+/*Responsive*/
 @media (max-width: 480px) {
     .calculator {
         font-size: 13px;
