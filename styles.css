@@ -1,0 +1,94 @@
+/* Diseño compacto para incrustaciones */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* Fondo transparente */
+    color: #333;
+}
+
+.calculator {
+    max-width: 320px; /* Tamaño reducido */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    margin: auto;
+}
+
+.calculator h2 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    background: #f0f8ff;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Diseño responsive */
+@media (max-width: 480px) {
+    .calculator {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .result {
+        font-size: 12px;
+    }
+}
